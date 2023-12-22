@@ -1,0 +1,113 @@
+/*header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*background-color: #333; /* Couleur de fond de la barre de navigation 
+    color: #fff; /* Couleur du texte de la barre de navigation 
+    /*padding: 10px;
+    z-index: 999; /* Pour s'assurer que la barre de navigation est au-dessus du contenu 
+    box-shadow: 0px 5px 10px #000000c2;
+}*/
+    
+    navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        box-shadow: 0px 5px 10px #000000c2;
+        height: 60px;
+        background-color: rgba(255, 255, 255);
+        /*z-index: 1;*/
+        grid-area: nav;
+        opacity: 0; /* La barre de navigation est initialement invisible */
+        animation: slideInNav 1s ease-out 2.5s forwards; /* Utilisez une animation slideInNav de 1 seconde avec un délai de 1 seconde */
+    }
+    .nav_list{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        height: 35px;
+    }
+    .nav_item{
+        padding: 0 20px 0 20px;
+        height: 100%;
+        transition-duration: 0.5s;
+    }
+    .nav_item a, .nav_item_end a{
+        font-size: 31px;
+        transition: smooth 0.5s ease-in-out;
+    }.nav_item a p, .nav_item_end a p{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .nav_item_first, .nav_item_end{
+        padding: 0 20px 0 20px;
+        transition-duration: 0.5s;
+    }
+    .nav_item_first img{
+        width: 35px;
+    }
+
+    .nav_item:hover, .nav_item_first:hover, .nav_item_end:hover{
+        transform: translateY(20%);
+        transition-duration: 0.5s;
+    }
+    .nav_item_first:active, .nav_item:active, .nav_item_end:active{
+        transform: translateY(20%);
+        transition-duration: 0.5s;
+    }
+    .nav_item a img, .nav_item_end a img{
+        display: none;
+        width: 35px;
+    }
+    @media screen and (max-width: 1700px){
+        .nav_item a, .nav_item_end a{
+            font-size: 21px;
+        }
+    }
+    @media screen and (max-width: 1400px){
+        .nav_item a, .nav_item_end a{
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width: 1360px){
+        .nav_item a, .nav_item_end a{
+            font-size: 18px;
+        }
+    }
+    @media screen and (max-width: 1255px){
+        .nav_item a, .nav_item_end a{
+            font-size: 15px;
+        }
+    }
+    @media screen and (max-width: 1000px){
+        .nav_item a p, .nav_item_end a p{
+            display: none;
+        }
+        .nav_item a img, .nav_item_end a img{
+            display: block;
+        }
+    }
+    @media screen and (max-width: 675px){
+        .nav_item, .nav_item_first, .nav_item_end{
+            padding: 0 2% 0 2%;
+        }
+        .nav_item a img, .nav_item_first a img, .nav_item_end a img{
+            width: 30px;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    @media screen and (max-width: 425px){
+        .nav_item, .nav_item_first, .nav_item_end{
+            padding: 0 1% 0 1%;
+        }
+    }

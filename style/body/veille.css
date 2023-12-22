@@ -1,0 +1,29 @@
+.veille{
+    padding: 59px 2.5% 0 2.5%;
+    background-color: white;
+    grid-area: vei;
+    text-align: justify;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 50px 110px auto;
+    gap: 1%;
+    grid-auto-flow: row;
+    justify-content: space-around;
+    align-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+    "tittle tittle"
+    "answer answer"
+    "mine outils";
+}
+
+.answer{
+    grid-area: answer;
+}
+.mine{
+    grid-area: mine;
+}
+.outils{
+    grid-area: outils;
+}

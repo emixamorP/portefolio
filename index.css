@@ -1,0 +1,170 @@
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: black;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+header{
+    width: 100%;
+    height: 59px;
+}
+nav{
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+}
+.nav_list{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 35px;
+}
+.nav_item{
+    padding: 0 20px 0 20px;
+    height: 100%;
+    transition-duration: 0.5s;
+}
+.nav_item a, .nav_item_end a{
+    font-size: 31px;
+}
+.nav_item_first{
+    padding: 0 20px 0 0;
+    transition-duration: 0.5s;
+}
+.nav_item_end{
+    padding: 0 0 0 20px;
+    transition-duration: 0.5s;
+}
+.nav_item_first img{
+    width: 35px;
+}
+
+.nav_item:hover, .nav_item_first:hover, .nav_item_end:hover{
+    /*text-decoration: underline;*/
+    transform: translateY(20%);
+    transition-duration: 0.5s;
+}
+.nav_item_first:active, .nav_item:active, .nav_item_end:active{
+    transform: translateY(20%);
+    transition-duration: 0.5s;
+}
+
+footer{
+    background-color: cyan;
+    height: 500px;
+}
+footer .contact{
+    background-color: burlywood;
+    position: relative;
+    height: 100%;
+}
+footer .contact .som{
+    position: relative;
+    background-color: blueviolet;
+    text-align: center;
+}
+footer .reseaux {
+    position: absolute;
+    text-align: center;
+    height: 250px;
+    width: 520px;
+    left: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    background-color: azure;
+}
+footer .lien{
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+footer .lien_2{
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -100%);
+}
+footer .lien img, footer .lien_2 img{
+    width: 50px;
+}
+footer .lien a, footer .lien_2 a{
+    display: inline-block;
+    margin: 0 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transform: all 0.5s ease;
+    transition: 0.3s;
+}
+footer .lien a:hover, footer .lien_2 a:hover{
+    transform: translateY(12%);
+}
+footer .lien p, .lien_2 p{
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+footer .reseaux h2 {
+    transform: translateY(350%);
+}
+footer .lien a:hover p, footer .lien_2 a:hover p{display: block;}
+
+footer .email{
+    position: absolute;
+    background-color: bisque;
+    height: 400px;
+    width: 1100px;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+}
+footer .nom input, footer .prenom input, footer .sujet input{
+    height: 40px;
+}
+footer .nom_pre{
+    position: absolute;
+    background-color: blue;
+    height: 40px;
+    width: 100%;
+    display: flex;
+}
+footer .nom_prenom .nom input, footer .nom_prenom .prenom input{
+    margin: 0 20px;
+}
+footer .sujet input{
+    position: absolute;
+    top: 12%;
+    left: 0;
+    width: 100%;
+}
+footer .message input{
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    top: 25%;
+    text-align: justify;
+}
+
+
+body .parcours, body .bts_sio, body .entreprises, body .projet, body .veille, body .tab_syn{
+    min-height: 94vh;
+}
+body{
+    display: grid;
+}

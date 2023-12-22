@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.timeline {
+  margin: 50px auto;
+  width: 600px;
+  position: relative;
+}
+
+.line {
+  width: 2px;
+  height: 100%;
+  background-color: #007bff;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.event {
+  display: flex;
+  margin-bottom: 10px;
+  position: relative;
+  height: 50px;
+}
+.event-left{
+  display: flex;
+  margin-bottom: 20px;
+  position: relative;
+  justify-content: flex-end;
+  height: 50px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #007bff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+.triangle{
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 15px solid #007bff;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+.right{
+  position: relative;
+  left: 52%;
+  text-align: left;
+}
+.left{
+  position: relative;
+  right: 52%;
+  text-align: right;
+}
+.left p{
+  top: 0;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.date{
+  width: 250px;
+  height: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+/*.date-today{
+  width: 250px;
+  height: 40px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.date-today p{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}*/
+
+.description{
+  height: 20px;
+}
+.left .description{
+  margin-right: 10px;
+}
+.right .description{
+  margin-left: 10px;
+}
+.right, .left{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+}

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+.home{
+    grid-area: home;
+}
+.home .para{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.home .para #text-container h1{
+    font-family: silkscreen;
+    font-size: 60px;
+}
+span{
+    color: red;
+}
+.home .h1{
+    transform: translateY(50%);
+    opacity: 0; /* Les éléments sont initialement invisibles */
+    animation: slideIn 1s ease-out 0.5s forwards; /* Utilisez une animation slideIn de 1 seconde avec un délai de 0.5 seconde */
+}
+.home h2{
+    transform: translateY(50%);
+    opacity: 0; /* La barre de navigation est initialement invisible */
+    animation: slideInNav 1s ease-out 1.5s forwards; /* Utilisez une animation slideInNav de 1 seconde avec un délai de 1 seconde */
+}

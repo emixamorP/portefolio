@@ -1,0 +1,128 @@
+.projet{
+    padding: 59px 2.5% 0 2.5%;
+    padding-top: 59px;
+    background-color: white;
+    grid-area: pro;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px auto auto;
+    gap: 0.5em;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+    "tittle tittle"
+    "ecole perso"
+    "projet_pro perso";
+}
+.projet h1{
+    text-align: center;
+    text-decoration: underline;
+    grid-area: name;
+}
+.projet h2{
+    text-align: center;
+    border-bottom: solid 2px black;
+    padding: 5px;
+}
+.ecole{grid-area: ecole;}
+.projet_prof{grid-area: projet_pro;}
+.perso{grid-area: perso;}
+
+.ecole, .projet_prof{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 40px auto;
+    gap: 1em 0.5em;
+    grid-auto-flow: row;
+    justify-content: space-around;
+    align-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+    "name name"
+    "left right";
+}
+.perso{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 40px auto auto;
+    gap: 1em 0.5em;
+    grid-auto-flow: row;
+    justify-content: space-around;
+    align-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+    "name name"
+    "left right"
+    "left-1 right-1"
+    "left-2 right-2";
+}
+.appli_web, .appli_mobile, .annee_1, .annee_2, .arcane, .adrian, .mini_jeu{
+    height: 300px;  
+    width: 300px;
+    border: solid 2px black;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.appli_web, .annee_1, .arcane{grid-area: left;}
+.appli_mobile, .annee_2, .adrian{grid-area: right;}
+.mini_jeu{grid-area: left-1;}
+.bas{
+    height: 256px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 71% 26%;
+    gap: 0.5em;
+    grid-auto-flow: row;
+    justify-content: space-around;
+    align-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+    "logo"
+    "docu";
+}
+.proj, .cea, .img-perso{
+    width: 125px;
+    height: 125px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    grid-area: logo;
+}
+.proj img, .cea img, .arcane img, .adrian img, .mini_jeu img{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+}
+.docu{
+    height: 50px;
+    width: 150px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 1px black;
+    border-radius: 50px;
+    transition-duration: 0.5s;
+    text-align: center;
+    grid-area: docu;
+}
+.docu p{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.docu:hover{
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.85);
+    transition-duration: 0.5s;
+}

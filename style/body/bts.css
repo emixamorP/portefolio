@@ -1,0 +1,88 @@
+.bts_sio{
+    background-color: white;
+    grid-area: bts;
+    text-align: justify;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 50px auto;
+    gap: 1%;
+    grid-auto-flow: row;
+    justify-content: space-around;
+    align-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+    "tittle tittle"
+    "droite mat_gene";
+    padding: 59px 2.5% 0 2.5%;
+}
+.tittle{
+    grid-area: tittle;
+}
+.pres_gene h1, .options h1, .mat_gene h1{
+    padding-bottom: 15px;
+}
+
+.droite{
+    grid-area: droite;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    gap: 25px 0;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+    "pres_gene"
+    "options";
+}
+.pres_gene{
+    grid-area: pres_gene;
+}
+.pres_gene .p{
+    text-indent: 50px;
+    padding-bottom: 25px;
+}
+
+.options{
+    grid-area: options;
+}
+.op-a{
+    padding-bottom: 15px;
+}
+.op-a p, .op-b p{
+    text-indent: 50px;
+}
+.options span{
+    text-decoration: underline red;
+    margin-left: 20px;
+}
+
+.mat_gene{
+    grid-area: mat_gene;
+}
+.ens-gene{
+    margin-bottom: 75px;
+}
+.sisr{
+    margin-bottom: 25px;
+}
+.mat_gene h3{
+    text-align: center;
+    text-decoration: underline;
+}
+.ens-gene p{
+    text-indent: 50px;
+}
+.ens-pro span{
+    margin-left: 50px;
+    text-decoration: underline red;
+}
+.bts_sio ul li{
+    list-style-type: initial;
+}
+.list{
+    margin-left: 20px;
+}
