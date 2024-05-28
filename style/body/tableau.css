@@ -21,6 +21,7 @@
 
 .answer-tab{
     grid-area: answer-tab;
+    margin-top: 15px;
 }
 .tableau{
     grid-area: tableau;

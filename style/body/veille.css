@@ -20,10 +20,24 @@
 
 .answer{
     grid-area: answer;
+    margin-top: 15px;
 }
 .mine{
     grid-area: mine;
+    margin-top: 15px;
+}
+.mine h1, .mine h2{
+    text-decoration: underline;
+}
+.mine p{
+    margin: 15px 0 15px 0;
 }
 .outils{
     grid-area: outils;
+}
+.outils h1{
+    text-decoration: underline;
+}
+.outils p{
+    margin-top: 15px;
 }

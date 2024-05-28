@@ -12,7 +12,7 @@ footer{
 .contact{
     padding: 10px 0 10px 0;
     display: grid;
-    grid-template-columns: 25% 70%;
+    grid-template-columns: 25% 50% 25%;
     grid-template-rows: auto;
     gap: 2em;
     grid-auto-flow: row;
@@ -21,7 +21,7 @@ footer{
     justify-items: stretch;
     align-items: stretch;
     grid-template-areas:
-    "reseaux email";
+    ". reseaux .";
 }
 .reseaux{
     height: auto;
@@ -61,7 +61,7 @@ footer{
 }
 .lien a img:hover .lien a p, .lien_2 a img:hover .lien a p{display: block;}
 
-.email{
+/*.email{
     border: solid 1px black;
     border-radius: 10px;
     grid-area: email;
@@ -140,4 +140,4 @@ footer{
 }
 .message input::placeholder{
     top: 0;
-}
+}*/
